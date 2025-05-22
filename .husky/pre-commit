@@ -1,0 +1,36 @@
+
+
+echo "🏁  Pre-commit starting..."
+
+files=$(git diff --cached --diff-filter=ACMR --name-only)
+
+if [ -z "$files" ]; then
+  echo "⚠️  No staged files to lint or format. Skipping..."
+  exit 0
+fi
+
+echo "🔎  Running ESLint on staged files..."
+if ! npx eslint --quiet $files; then
+  echo "❌  ESLint found errors. Please fix them before committing."
+  echo "🛑  Commit aborted."
+  exit 1
+fi
+echo "✅  ESLint passed."
+
+echo "🪄  Running Prettier check on staged files..."
+if ! npx pretty-quick --staged --check --verbose; then
+  echo "❌  Prettier found formatting issues. Please run 'npx prettier --write' to fix."
+  echo "🛑  Commit aborted."
+  exit 1
+fi
+echo "✅  Prettier check passed."
+
+# Proteção contra commits direto na main
+branch="$(git rev-parse --abbrev-ref HEAD)"
+# if [ "$branch" = "main" ]; then
+#   echo -e "\n🐞  You can't commit directly to the main branch!"
+#   echo -e "\n❌  Pre-commit failed!\n"
+#   exit 1
+# fi
+
+echo "✨  Pre-commit checks passed! Proceeding with commit."
