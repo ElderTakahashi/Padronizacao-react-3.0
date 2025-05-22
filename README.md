@@ -10,6 +10,8 @@ Este projeto foi iniciado com [Vite](https://vitejs.dev/) e utiliza React + Type
 - [Tailwind CSS](https://tailwindcss.com/) - Framework utilitário para estilização
 - [PostCSS](https://postcss.org/) - Processador de CSS
 - [Autoprefixer](https://github.com/postcss/autoprefixer) - Compatibilidade de CSS com diferentes navegadores
+- [Headless UI](https://headlessui.com/) - Componentes acessíveis e sem estilo, integrados ao Tailwind CSS
+- [Phosphor Icons](https://phosphoricons.com/) - Conjunto de ícones flexível, leve e personalizável
 - [ESLint](https://eslint.org/) — Linter para padronização de código
 - [Prettier](https://prettier.io/) — Formatador de código automático
 - [react-hook-form](https://react-hook-form.com/) — Manipulação de formulários

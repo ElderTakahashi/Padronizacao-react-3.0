@@ -1,9 +1,16 @@
 {
   "compilerOptions": {
     "composite": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true
+    "module": "NodeNext",
+    "moduleResolution": "Node16",
+    "allowJs": false,
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"]
   },
-  "include": ["vite.config.mjs"]
+  "include": ["vite.config.ts"],
+  "exclude": ["node_modules", "dist"]
 }
