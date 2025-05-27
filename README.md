@@ -27,14 +27,27 @@ Este projeto foi iniciado com [Vite](https://vitejs.dev/) e utiliza React + Type
 
 ```
 src/
-├── assets/         # Imagens, fontes e arquivos estáticos
-├── components/     # Componentes reutilizáveis
-├── pages/          # Páginas principais da aplicação
-├── routes/         # Definição de rotas e navegação
-├── services/       # Lógicas de integração com APIs, serviços externos
-│   ├── api/        # Instâncias e configurações globais do Axios
-│   └── endpoint/   # Endpoints específicos organizados por domínio
-├── utils/          # Funções utilitárias e helpers
+├── assets/             # Images, fonts, and static assets
+├── components/         # Reusable React components
+│   └── common/         # Shared UI components (e.g., Button, Modal)
+│   └── styles/         # Styles for the shared UI components (e.g., Button, Modal)
+├── pages/              # Page components for routes
+├── routes/             # Route definitions and navigation logic
+├── services/           # API and external service integrations
+│   ├── api/            # Axios instance and configuration
+│   └── endpoints/      # API endpoints organized by domain
+├── utils/              # Utility functions and helpers
+│   ├── helpers/        # General-purpose utilities
+│   ├── types/          # TypeScript type definitions
+│   ├── constants/      # Constant values used across the application
+│   ├── enums/          # Enum definitions for TypeScript
+│   └── hooks/          # Custom React hooks
+├── styles/             # CSS files (e.g., Tailwind CSS entry point)
+│   └── global.css/     # Global application styles
+│   └── index.css/      # Main entry point for styles
+│   └── variables.css/  # CSS variables for themes and colors
+├── mocks/              # Mock data for development (optional)
+├── config/             # Configuration files (e.g., environment variables)
 ```
 
 ## ▶️ Como rodar o projeto

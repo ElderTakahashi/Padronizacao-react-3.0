@@ -1,6 +1,6 @@
 import react from "@vitejs/plugin-react"
 import path from "path"
-import { defineConfig, normalizePath } from "vite"
+import { defineConfig } from "vite"
 import tailwindcss from "@tailwindcss/vite"
 
 export default defineConfig({

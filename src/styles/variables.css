@@ -1,0 +1,83 @@
+:root {
+  /* COLORS */
+  --color-blue: #0f3878;
+  --color-blue-2: #2b61b6;
+  --color-red: #ab1919;
+  --color-yellow: #d1ae33;
+  --color-green: #148641;
+  --color-light-blue: #e0e5eb;
+  --color-purple: #600498;
+
+  /* Gray scale */
+  --gray-0: #ffffff;
+  --gray-50: #f7f7f7;
+  --gray-100: #e3e3e3;
+  --gray-200: #c8c8c8;
+  --gray-300: #a4a4a4;
+  --gray-400: #8e8e8e;
+  --gray-500: #666666;
+  --gray-600: #515151;
+  --gray-700: #434343;
+  --gray-800: #383838;
+  --gray-900: #313131;
+  --gray-950: #222222;
+  --black: #222222;
+
+  /* Theme colors */
+  --color-primary: var(--color-blue);
+  --color-primary-hover: var(--color-light-blue);
+  --color-success: var(--color-green);
+  --color-warning: var(--color-yellow);
+  --color-danger: var(--color-red);
+  --color-info: var(--color-light-blue);
+  --color-secondary: var(--color-purple);
+
+  --color-surface: var(--gray-0);
+  --color-on-surface: var(--gray-950);
+
+  --color-white: var(--gray-0);
+  --color-black: var(--gray-950);
+
+  /* Extras */
+  --color-primary-light: var(--color-light-blue);
+  --color-primary-lighter: #e7ecf2;
+  --color-danger-lighter: #f7e8e8;
+
+  /* Background */
+  --body-bg: var(--gray-50);
+
+  /* Fonts */
+  --font-multiplier: 0.75;
+  --font-size-base: 0.9rem;
+
+  /* Heading font sizes (calculados) */
+  --font-size-h6: calc(var(--font-size-base) * var(--font-multiplier));
+  --font-size-h5: var(--font-size-base);
+  --font-size-h4: calc(var(--font-size-h5) / var(--font-multiplier));
+  --font-size-h3: calc(var(--font-size-h4) / var(--font-multiplier));
+  --font-size-h2: calc(var(--font-size-h3) / var(--font-multiplier));
+  --font-size-h1: 3.683rem;
+
+  /* Spacers */
+  --spacer-0: 0px;
+  --spacer-1: 4px;
+  --spacer-2: 8px;
+  --spacer-3: 12px;
+  --spacer-4: 16px;
+  --spacer-5: 24px;
+  --spacer-6: 32px;
+  --spacer-7: 40px;
+  --spacer-8: 48px;
+  --spacer-9: 56px;
+  --spacer-10: 64px;
+
+  /* Success hover */
+  --success-hover: #34a853;
+  --success-hover-20: #34a853;
+
+  /* Font family */
+  --font-family-sans-serif:
+    "Poppins", sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
