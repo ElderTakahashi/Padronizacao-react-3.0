@@ -1,12 +1,11 @@
-button {
-  padding: 10px;
-  border-radius: var(--spacer-1);
-  border: none;
+.btn-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: var(--spacer-1, 8px);
   cursor: pointer;
-  font: inherit;
-  color: inherit;
-  outline: none;
-  background: transparent;
+
   transition:
     background-color 0.2s ease,
     color 0.2s ease,
@@ -27,7 +26,7 @@ button {
 .button-primary {
   border: none;
   background-color: var(--color-primary);
-  color: var(--gray-100);
+  color: var(--gray-0);
 }
 
 .button-primary:disabled {
@@ -149,4 +148,14 @@ button {
   -webkit-box-shadow: 0px 0px 0px 8px var(--success-hover-20);
   -moz-box-shadow: 0px 0px 0px 8px var(--success-hover-20);
   box-shadow: 0px 0px 0px 8px var(--success-hover-20);
+}
+
+.button-ghost {
+  border: none;
+  background: transparent;
+  color: var(--color-primary);
+}
+
+.button-ghost:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
