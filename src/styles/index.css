@@ -1,2 +1,4 @@
 @import "./global.css";
 @import "../components/styles/index.css";
+@import "./variables.css";
+@import "./buttons.css";

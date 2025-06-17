@@ -2,3 +2,37 @@
 @import "tailwindcss";
 @import "./styles/index.css";
 @import "tw-animate-css";
+
+:root {
+  --radius: 0.625rem;
+  --background: var(--gray-50);
+  --foreground: var(--gray-950);
+  --card: var(--color-white);
+  --card-foreground: var(--gray-900);
+  --popover: var(--color-white);
+  --popover-foreground: var(--gray-900);
+  --primary: var(--color-primary);
+  --primary-foreground: var(--color-white);
+  --secondary: var(--color-secondary);
+  --secondary-foreground: var(--gray-0);
+  --muted: var(--gray-200);
+  --muted-foreground: var(--gray-500);
+  --accent: var(--color-light-blue);
+  --accent-foreground: var(--gray-900);
+  --destructive: var(--color-danger);
+  --input: var(--gray-100);
+  --ring: var(--color-primary);
+  --chart-1: var(--color-blue);
+  --chart-2: var(--color-green);
+  --chart-3: var(--color-yellow);
+  --chart-4: var(--color-red);
+  --chart-5: var(--color-purple);
+  --sidebar: var(--gray-0);
+  --sidebar-foreground: var(--gray-950);
+  --sidebar-primary: var(--color-primary);
+  --sidebar-primary-foreground: var(--color-white);
+  --sidebar-accent: var(--color-secondary);
+  --sidebar-accent-foreground: var(--color-white);
+  --sidebar-border: var(--gray-200);
+  --sidebar-ring: var(--color-primary);
+}

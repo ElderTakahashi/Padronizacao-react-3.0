@@ -26,11 +26,11 @@
   /* Theme colors */
   --color-primary: var(--color-blue);
   --color-primary-hover: var(--color-light-blue);
+  --color-secondary: var(--color-blue-2);
   --color-success: var(--color-green);
   --color-warning: var(--color-yellow);
   --color-danger: var(--color-red);
   --color-info: var(--color-light-blue);
-  --color-secondary: var(--color-purple);
 
   --color-surface: var(--gray-0);
   --color-on-surface: var(--gray-950);
@@ -69,7 +69,7 @@
   --spacer-7: 40px;
   --spacer-8: 48px;
   --spacer-9: 56px;
-  --spacer-10: 64px;
+  --spacer-10: 128px;
 
   /* Success hover */
   --success-hover: #34a853;

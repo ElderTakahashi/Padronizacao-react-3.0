@@ -2,7 +2,12 @@ import { cn } from "@/lib/utils"
 import { ButtonHTMLAttributes, ReactNode } from "react"
 import { Loader2 } from "lucide-react"
 
-export type ButtonVariant = "primary" | "secondary" | "ghost" | "danger"
+export type ButtonVariant =
+  | "primary"
+  | "secondary"
+  | "tertiary"
+  | "ghost"
+  | "danger"
 export type ButtonSize = "sm" | "md" | "lg"
 
 interface ButtonBaseProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -27,6 +32,7 @@ export const Button = ({
   const variantClasses = {
     primary: "button-primary",
     secondary: "button-secondary",
+    tertiary: "button-tertiary",
     ghost: "button-ghost",
     danger: "button-danger",
   }
